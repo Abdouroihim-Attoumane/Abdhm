@@ -1,0 +1,17 @@
+header, footer, .formation, .competence {
+    background-color: rgb(240, 240, 240);
+}
+
+.profil {
+    width: 6cm;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.moi {
+    display: flex;
+}
+
+
+
+
