@@ -12,6 +12,19 @@ header, footer, .formation, .competence {
     display: flex;
 }
 
-
-
-
+.logo{
+    color: blue;
+}
+strong{
+    color: blue;
+    text-transform: uppercase;
+}
+.IMN{
+    color: blue;
+}
+/* h2{
+    color: blue;
+} */
+.bac, .MI{
+    color: blue;
+}
