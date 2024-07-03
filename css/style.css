@@ -1,79 +1,72 @@
-header, footer{
-    background-color: rgb(245, 245, 245);
-    margin-bottom: 25px;
-    height: 50px;
+header {
+    border: 1px black solid;
+    /* margin: 25px; */
+    background-color: rgb(245, 245, 245, 0.7);
+    padding: 10px;
+    height: 25px;
+    /* overflow:scroll; */
+    /* opacity: 0.1; */
 }
-body{
-  background-color: white;  
-}
-p{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: large;
-   letter-spacing: normal;
-   word-spacing: normal;
-   line-height: normal; 
-   text-align: left;
-}
-img{
-    width: 25%;
+footer {
+    border: 1px black solid;
+    padding: 10px;
+    /* margin: 25px; */
+    background-color: rgb(255, 255, 255,0.8);
+    margin-top: 0px;
     height: 250px;
-    padding: 25px 100px 10px 50px;
+    /* border: 1px rgb(200, 200, 200) solid; 
+    border-left: none;
+    border-right: none;
+    border-bottom: none;*/
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(226, 226, 226);
+    /* background-image: url("../image/fond2.jpg"); */
+}
+
+p {
+    font-size: large;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+h2 {
     margin: 25px;
-}
-#partie_1 {
-    display: flex;
-    padding: 25px 100px 10px 50px;
-    margin: 25px;
-    border: 1px black solid;
-    
-}
-#partie_2{
-    background-color: rgb(245, 245, 245);;
-    /* padding: 25px 100px 10px 50px;
-     margin: 25px; 
-    border: 1px black solid; */
-    
-}
-.position{
-    display: flex;
-    border: 1px black solid;
-}
-.texte_boite{
-    padding: 25px 100px 10px 50px;
-    margin: 25px;
-    border: 1px black solid;
-}
-#presentation {
-    padding: 25px 50px 0px 50px;
-    border: 1px black solid;
-}
-#Profil_photo{
-    width: 125%;
-    height: 425px;
-    border: 1px black solid;
-}
-
-.profil {
-    width: 6cm;
-    height: 100%;
-    background-color: rgb(240, 240, 240);
-}
-
-
-
-.logo{
-    color: blue;
 }
 strong{
-    color: blue;
-    text-transform: uppercase;
+    color: rgb(0, 187, 255);
+    text-transform : uppercase;
 }
-.IMN{
-    color: blue;
+h3 {
+    margin: 0px;
+    padding: 0px;
+    
 }
-/* h2{
-    color: blue;
-} */
-.bac, .MI{
-    color: blue;
+
+h5 {
+    margin: 25px;
+    color: rgb(0, 187, 255);
+}
+
+img {
+    width: 30%;
+    height: 250px;
+    padding: 25px;
+    border: 1px black solid;
+    opacity: 0.9;
+}
+
+a {
+    border: 1px black solid;
+    /* background-color: blue; */
+    margin: 25px;
+    padding: 7px;
+    border-radius:100px;
+    text-decoration: none;
+    background-color: rgb(0, 187, 255);
+    color: white;
+    font-weight: bold;
 }
