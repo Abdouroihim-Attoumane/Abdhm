@@ -1,0 +1,51 @@
+#Gtitre{
+    text-align: center;
+}
+.partie-1 {
+    padding: 0px 25px 10px 25px;
+    /* border: 1px black solid; */
+    margin: 100px 25px 25px 25px;
+}
+.sous-partie-1{
+    display: flex;
+    padding: 25px;
+    margin: 25px;
+    /* border: 1px black solid; */
+}
+.sous-partie-2{
+    display: flex;
+    margin: 25px;
+    /* border: 1px black solid; */
+    padding: 25px;
+}
+#master, #licence{
+    /* border: 1px black solid; */
+    padding: 0px 50px 0px 50px;
+    margin: 25px;
+}
+
+.brochure{
+    width: 100%;
+    height: 275px;
+    /* border: 1px black solid; */
+    padding: 25px;
+    background-image: url("../image/brochure.png");
+    background-size: cover; /* Ajuste l'image pour couvrir l'élément */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+}
+.brochure:hover {
+    background-color: rgb(0, 158, 215);
+  }
+h2{
+    color: rgb(0, 187, 255);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}

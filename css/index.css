@@ -1,8 +1,8 @@
 #partie_1 {
     display: flex;
     padding: 0px 50px 10px 25px;
-    margin: 25px;
-    border: 1px black solid;
+    margin: 100px 25px 25px 25px;
+    /* border: 1px black solid; */
     /* border-collapse : collapse; */
     
 }
@@ -12,15 +12,14 @@
 #presentation {
     padding: 0px 50px 0px 50px;
     margin: 25px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 #Profil_photo{
     width: 100%;
     height: 400px;
     padding: 10px;
     margin: 10px 0px 0px 0px;
-    border: 1px black solid;
-    background-color: white;
+    background-color: beige;
 }
 
 #partie_2{
@@ -32,12 +31,12 @@
 }
 .position{
     display: flex;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     padding: 25px 125px 25px 125px;
 }
 .texte_boite {
     padding: 25px;
-    border: 1px black solid;
+    /* border: 1px black solid; */
 }
 .texte_boite_gauche{
     margin: 0px 125px 0px 0px ;   

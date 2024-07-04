@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,52 +7,93 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Formation.css">
 </head>
+
 <body>
     <header>
-        <a href="index.html">Abdhm</a>
+        <a id="Abdhm" class="bouton" href="index.html">Abdhm</a>
+        <div id="navigation">
+            <a href="index.html">Accueil</a> 
+            <a href="Formation.html">En savoir plus</a>
+         </div>
     </header>
     <main>
-        <section class="partie_3">
-            <h2>Formation principal</h2>
-            <ol>
-                <li>Ingénieur Mathématique Numérique</li>
-                <li>Licence de mathématiques et informatique</li>
-            </ol>
+        <section class="partie-1 ">
+            <h1 id="Gtitre">Diplomes Principal</h1>
+            <div class="sous-partie-1">
+                <div id="master">
+                    <h2>Master d'Ingenieur</h2>
+                    <p>Un double diplôme coconstruite par deux diplômes d’ingénierie
+                        dans le cadre du Campus franco-sénégalais. L’un délivré par l’UBS
+                        de France l’autre par l’UCAD </p>
+                </div>
+                <a class="brochure" href="Brochure_CFS.pdf"></a>
+            </div>
+            <div class="sous-partie-2">
+                <a class="brochure" href="Brochure_CFS.pdf"></a>
+                <div id="licence">
+                    <h2>Licence de Maths Info</h2>
+                    <p>Le Diplôme de l’UCAD qui offre toutes les compétences mathématiques,
+                        physiques et informatiques pour les études et recherches supérieures
+                        dans les sciences techniques.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section class="partie_3">
-            <h2>Formation secondaire</h2>
-            <ul>
-                <li>Data sciences et machin learning</li>
-                <li>optimisation et recherche operationel </li>
-                <li>Integrateur web avec HTML, CSS et JavaScrip </li>
-                <li>Développement web en Python et pHp</li>
-                <li>Développement mobile avec flutter </li>
-                <li>Base de données relationnel</li>
-            </ul>
-        </section>
-
-        <table>
-            <caption>liste des etudiant</caption>
-            <th>
-            <td>Nom</td>
-            <td>Prenom</td>
-            <td>Adresse</td>
-            </th>
-            <tr>
-                <td>ab</td>
-                <td>ac</td>
-                <td>ad</td>
-            </tr>
-            <tr>
-                <td>dr</td>
-                <td>dt</td>
-                <td>dv</td>
-            </tr>
-
+        <table class="partie-2">
+            <caption>
+                <h2>Mes formations et compétences</h2>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Domaine</th>
+                    <th>Expertise</th>
+                    <th>certification</th>
+                    <th>Projet realiser</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Data science</td>
+                    <td>python pour l'analyse de données</td>
+                    <td>diplomé</td>
+                    <td>projet</td>
+                </tr>
+                <tr>
+                    <td>Machine learning et dip learning</td>
+                    <td>diplomé</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Analyse numerique</td>
+                    <td>Modelisation et optimisation</td>
+                    <td>diplomé</td>
+                    <td>projet</td>
+                </tr>
+                <tr>
+                    <td>recherche operationel</td>
+                    <td>diplomé</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Développement</td>
+                    <td>developpeur web</td>
+                    <td>diplomé</td>
+                    <td>projet</td>
+                </tr>
+                <tr>
+                    <td>developpeur mobile</td>
+                    <td>diplomé</td>
+                </tr>
+                <tr>
+                    <td>gestion de projet</td>
+                    <td>chef de projet</td>
+                    <td>diplomé</td>
+                    <td>projet</td>
+                </tr>
+            </tbody>
         </table>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
