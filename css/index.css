@@ -1,46 +1,7 @@
-#partie_1 {
-    display: flex;
-    padding: 0px 50px 10px 25px;
-    margin: 100px 25px 25px 25px;
-    /* border: 1px black solid; */
-    /* border-collapse : collapse; */
-    
-}
-.Ingenieur{
-    margin: 0px;
-}
-#presentation {
-    padding: 0px 50px 0px 50px;
-    margin: 25px;
-    /* border: 1px black solid; */
-}
-#Profil_photo{
+#Profil-photo{
     width: 100%;
-    height: 400px;
-    padding: 10px;
-    margin: 10px 0px 0px 0px;
-    background-color: beige;
+    height: 450px;
+    padding: 0px;
+    /* background-color: beige; */
 }
 
-#partie_2{
-    background-color: rgb(245, 245, 245, 0.3);
-    padding: 5px 25px 25px 25px;
-    /* margin: 25px;  */
-    /* border: 1px black solid;  */
-    
-}
-.position{
-    display: flex;
-    /* border: 1px black solid; */
-    padding: 25px 125px 25px 125px;
-}
-.texte_boite {
-    padding: 25px;
-    /* border: 1px black solid; */
-}
-.texte_boite_gauche{
-    margin: 0px 125px 0px 0px ;   
-}
-.texte_boite_droite{
-    margin: 0px 0px 0px 170px ; 
-}
