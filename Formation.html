@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes formation et Diplomes</title>
+    <link rel="icon" type="image/png" href="image/Abdhm-logo-blanc.png">
+    <title>Abdhm-Parcours</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/Formation.css">
+    <style>
+        #brochure {
+            width: 100%;
+            height: 300px;
+            /* border: 1px black solid; */
+            padding: 25px;
+            background-image: url("../image/brochure.png");
+            background-size: cover;
+            /* Ajuste l'image pour couvrir l'élément */
+            /* background-position: center; Centre l'image */
+            background-repeat: no-repeat;
+            /* Évite la répétition de l'image */
+        }
+
+        h2 {
+            color: rgb(0, 187, 255);
+        }
+        th,
+        td {
+            border: 1px solid rgb(0, 187, 255);
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            color: rgb(0, 187, 255);
+        }
+        
+    </style>
 </head>
 
 <body>
     <header>
-        <a class="bouton" href="index.html">Abdhm</a>
+        <a class="bouton" href="Formation.html">Abdhm</a>
         <div id="navigation">
-            <a href="index.html">Accueil</a> 
-            <a href="Formation.html">parcour</a>
-         </div>
+            <a href="index.html">Accueil</a>
+            <a href="Formation.html">Parcours</a>
+        </div>
     </header>
     <main>
         <section class="partie-1">
@@ -26,10 +55,10 @@
                         dans le cadre du Campus franco-sénégalais. L’un délivré par l’UBS
                         de France l’autre par l’UCAD </p>
                 </div>
-                <a class="brochure" href="Brochure_CFS.pdf"></a>
+                <a id="brochure" href="Brochure_CFS.pdf"></a>
             </div>
             <div class="partie">
-                <a class="brochure" href="Brochure_CFS.pdf"></a>
+                <img src="image/Maths.jpg">
                 <div class="texte-boite texte-boite-droite">
                     <h2>Licence de Maths Info</h2>
                     <p>Le Diplôme de l’UCAD qui offre toutes les compétences mathématiques,
@@ -39,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <table >
+        <table style="width: 100%; border-collapse: collapse;">
             <caption>
                 <h1>Mes formations et compétences</h1>
             </caption>
