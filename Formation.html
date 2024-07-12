@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="image/Abdhm-logo-blanc.png">
     <title>Abdhm-Parcours</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
     <style>
         #brochure {
-            width: 100%;
+            width: 35%;
             height: 300px;
-            /* border: 1px black solid; */
+            border: 1px black solid;
             padding: 25px;
             background-image: url("../image/brochure.png");
             background-size: cover;
@@ -23,7 +23,16 @@
         h2 {
             color: rgb(0, 187, 255);
         }
-        th,
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgb(255, 255, 255);
+        }
+        caption{
+            background-color: rgb(255, 255, 255);
+            text-decoration: underline;
+        }
         td {
             border: 1px solid rgb(0, 187, 255);
             padding: 8px;
@@ -33,17 +42,16 @@
         th {
             color: rgb(0, 187, 255);
         }
-        
     </style>
 </head>
 
 <body>
     <header>
-        <a class="bouton" href="Formation.html">Abdhm</a>
-        <div id="navigation">
+        <a class="btn" href="Formation.html">Abdhm</a>
+        <nav>
             <a href="index.html">Accueil</a>
             <a href="Formation.html">Parcours</a>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="partie-1">
@@ -59,7 +67,7 @@
             </div>
             <div class="partie">
                 <img src="image/Maths.jpg">
-                <div class="texte-boite texte-boite-droite">
+                <div class="texte-boite">
                     <h2>Licence de Maths Info</h2>
                     <p>Le Diplôme de l’UCAD qui offre toutes les compétences mathématiques,
                         physiques et informatiques pour les études et recherches supérieures
@@ -68,7 +76,7 @@
                 </div>
             </div>
         </section>
-        <table style="width: 100%; border-collapse: collapse;">
+        <table>
             <caption>
                 <h1>Mes formations et compétences</h1>
             </caption>
@@ -77,7 +85,7 @@
                     <th>Domaine</th>
                     <th>Expertise</th>
                     <th>certification</th>
-                    <th>Projet realiser</th>
+                    <th>Projets réalisés</th>
                 </tr>
             </thead>
             <tbody>
@@ -85,7 +93,7 @@
                     <td rowspan="2">Data science</td>
                     <td>python pour l'analyse de données</td>
                     <td>diplomé</td>
-                    <td>projet</td>
+                    <td rowspan="2">projet</td>
                 </tr>
                 <tr>
                     <td>Machine learning et dip learning</td>
@@ -95,7 +103,7 @@
                     <td rowspan="2">Analyse numerique</td>
                     <td>Modelisation et optimisation</td>
                     <td>diplomé</td>
-                    <td>projet</td>
+                    <td rowspan="2">projet</td>
                 </tr>
                 <tr>
                     <td>recherche operationel</td>
@@ -105,7 +113,7 @@
                     <td rowspan="2">Développement</td>
                     <td>developpeur web</td>
                     <td>diplomé</td>
-                    <td>projet</td>
+                    <td rowspan="2">projet</td>
                 </tr>
                 <tr>
                     <td>developpeur mobile</td>
@@ -119,6 +127,17 @@
                 </tr>
             </tbody>
         </table>
+        <section>
+            <audio src="son/saad-el-ghamidi-001-al-fatiha-204-9244.mp3" controls="controls"></audio>
+            <video id="video" src="video/WhatsApp Video 2024-07-01 at 15.17.47_db96e592.mp4" controls="controls"
+                poster="video/_4df593a1-ef78-46ed-a4e4-0381f1b5c73e.jpeg"></video>
+            <div>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/YL1sGx6y5NI"
+                    title="LÉGISLATIVES : la vidéo pour comprendre les résultats et la suite" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
     <footer>
 

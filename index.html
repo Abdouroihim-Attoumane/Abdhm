@@ -5,26 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="image/Abdhm-logo-blanc.png">
     <title>Abdhm-Accuiel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
     <style>
         #Profil-photo {
-            width: 100%;
+            width: 40%;
             height: 450px;
             padding: 0px;
-            /* background-color: beige; */
+            background-color: beige;
+        }
+
+        form {
+            background-color: rgb(245, 245, 245);
+            border: 1px black solid;
+            display: grid;
+
+        }
+
+        fieldset {
+            margin: 10px;
+            border: 1px black solid;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .champs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 1px black solid;
         }
     </style>
-    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <header>
-        <a class="bouton" href="index.html">Abdhm</a>
-        <div id="navigation">
+        <a class="btn" href="index.html">Abdhm</a>
+        <nav>
             <a href="index.html">Accueil</a>
             <a href="Formation.html">Parcours</a>
-        </div>
-
+        </nav>
     </header>
     <main>
         <section class="partie-1 partie">
@@ -35,7 +54,7 @@
                     Dynamique et polyvalent, je suis toujours à la
                     recherche de nouvelles compétences
                 </p>
-                <a class="bouton" href="mailto:abdouroihim.attoumane@outlook.com">UN PROJET ? ÉCRIVEZ-MOI</a>
+                <a class="btn" href="mailto:abdouroihim.attoumane@outlook.com">UN PROJET ? ÉCRIVEZ-MOI</a>
 
             </div>
             <img id="Profil-photo" src="image/Abdhm_ucad.jpg" alt=" Mon Portrait ">
@@ -56,7 +75,7 @@
 
             <div class="partie">
                 <img src="image/Analyse_Numerique.png" alt="Analyse Numérique">
-                <div class="texte-boite texte-boite-droite">
+                <div class="texte-boite ">
                     <h2>Analyse Numérique</h2>
                     <h3>Modelisation et optimisation</h3>
                     <h3>simulation</h3>
@@ -75,6 +94,45 @@
                 <img src="image/developpeur.jpg" alt="developpeur">
             </div>
         </section>
+        <form action="" method="get">
+            <p>Texte avant le formulaire</p>
+            <fieldset>
+                <legend>Nom et Prenom</legend>
+                <div class="champs">
+                    <label for="prenom">Votre nom :</label>
+                    <input type="text" name="prenom" placeholder="Ex. : blablabla">
+                </div>
+                <div class="champs">
+                    <label for="nom">Votre nom :</label>
+                    <input type="text" name="nom" placeholder="Ex. : blablabla">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contacte</legend>
+                <div class="champs">
+                    <label for="email">Votre e-mail :</label>
+                    <input type="email" name="email" placeholder="Ex. : blablabla@gmail.com">
+                </div>
+                <div class="champs">
+                    <label for="numero">Votre numero de téléphone :</label>
+                    <input type="tel" name="numero" placeholder="Ex. : +221 ...">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Plus</legend>
+                <div class="champs">
+                    <label for="dit_tout">Dit moi tout :</label>
+                    <textarea name="dit_tout"></textarea>
+                </div>
+                <div class="champs">
+                    <p>Comment voulez vous qu'on vous contacte ?</p>
+                    <input type="radio" name="contacte" value="mail"> <label for="contacte">Par e-mail </label><br>
+                    <input type="radio" name="contacte" value="WhatsApp"> <label for="contacte">Par WhatsApp</label><br>
+                </div>
+            </fieldset>
+            <input type="submit" value="Envoyez" class="btn" id="btn_envoie">
+
+        </form>
 
     </main>
     <footer>

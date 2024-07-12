@@ -1,0 +1,160 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*type d'ecriture*/
+    background-color: rgb(226, 226, 226);
+    /*couleur du fond*/
+    margin: 10px;
+    /* marge exterieur*/
+    padding: 15px;
+    /* marge interieur*/
+    border: 1px black solid;
+    /* bordure*/
+
+    header {
+        top: 0;
+        /* cole le navigateur en haut*/
+        left: 0;
+        /* cole le navigateur à gauche*/
+        padding: 5px;
+        border: 1px black solid;
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        /* positionner les boites enfants les unes juste à cotés des autres*/
+        flex-direction: row;
+        /*la manier dont les boites enfants vont se positionner*/
+        justify-content: space-between;
+        /* les éléments sont étirés sur toute l'axe*/
+        width: 100%;
+        /* il prent toute l'éspace*/
+        position: fixed;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px black solid;
+            margin-right: 25px;
+            /*marge exterieur droite*/
+            width: 175px;
+            /* taille de la largeur*/
+
+            a {
+                font-size: medium;
+                /*taille de la police*/
+                border: 1px black solid;
+                /* font-weight: bold; */
+                color: black;
+                /*couleur du texte*/
+
+                /* à la survole */
+                &:hover {
+                    color: rgb(0, 158, 215);
+                }
+            }
+
+
+        }
+    }
+
+    section {
+        padding: 10px;
+        border: 1px black solid;
+        background-color: rgb(255, 255, 255);
+        
+        .titre {
+            text-align: center;
+        }
+
+        img {
+            width: 40%;
+            height: 300px;
+            /*taille de la hauteur*/
+            margin: 0px;
+            border: 1px black solid;
+        }
+
+        h1 {
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font-size: xx-large;
+            border: 1px black solid;
+        }
+
+        h2 {
+            font-size: x-large;
+            margin-top: 0px;
+            line-height: 45px;
+            border: 1px black solid;
+        }
+
+        h3 {
+            font-size: large;
+            margin: 25px;
+            color: rgb(0, 187, 255);
+        }
+
+        p {
+            margin-top: 0px;
+            font-size: large;
+            line-height: 45px;
+        }
+
+        strong {
+            color: rgb(0, 187, 255);
+            text-transform: uppercase;
+        }
+    }
+}
+
+.btn {
+    padding: 5px;
+    margin-left: 10px;
+    /*marge exterieur gauche*/
+    border-radius: 45px;
+    /* la courbure des angles */
+    background-color: rgb(0, 187, 255);
+    color: white;
+    text-decoration: none;
+    /* type de souslignement*/
+    font-weight: bold;
+    /*style (gras)*/
+
+    &:hover {
+        background-color: rgb(0, 158, 215);
+    }
+
+}
+
+.partie-1 {
+    margin-top: 50px;
+    background-color: rgb(226, 226, 226);
+}
+
+.partie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Allez à la ligne si il n'y a plus de place*/
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px black solid;
+    justify-content: center;
+    /* Centre horizontalement */
+    .texte-boite {
+        padding: 10px;
+        border: 1px black solid;
+        width: 55%;
+    }
+}
+
+#video {
+    width: 25%;
+    height: 200px;
+}
+/* footer {
+    border: 1px black solid;
+    padding: 10px; 
+    background-color: rgb(255, 255, 255,0.8);
+    margin-top: 0px;
+    height: 250px;
+} */
